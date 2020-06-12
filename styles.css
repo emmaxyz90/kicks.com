@@ -1,0 +1,267 @@
+*{
+	box-sizing: border-box;/*To ensure contents fits into the page perfectly*/
+	margin: 0;
+	padding: 0;
+}
+
+/*General styling of the html body */
+body{	
+	font-family: Bahnschrift SemiLight, sans-serif;
+	overflow: auto;
+}
+
+/*Introduction section Styling*/
+#introduction .container{
+	padding-top: 50px;
+}
+
+#introduction .container .section1{
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	top: -100px;
+}
+
+#introduction .container .section2{
+	width: 40%;
+	display: inline-block;
+}
+
+#introduction .container .section1 h3{
+	font-size: 3.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#introduction .container .section1 p{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#introduction .container .section2 p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+
+.order{
+	margin-left:25%;
+}
+
+#orderBtn{
+	width: 200px;
+	font-size: 1.5em;
+	background-color: #000;
+	color:#ff6600;
+	border-radius: 10px;
+	padding: 10px;
+	outline: none;	
+}
+
+/*Operations Section Styling*/
+#operation .container{
+	margin-top: 50px;
+	background-color:#ff6600;
+}
+
+#operation .container .section{
+	padding: 50px 0;	
+}
+
+#operation .container .section h2{
+	text-align: center;	
+	color: #fff;
+	font-size: 1.5em;
+	padding-bottom: 50px;
+}
+
+.section .section-division{
+	margin: 0 3%;
+}
+
+.section .section-division .section-info{
+	display: inline-block;
+	width: 380px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.section .section-division .section-info .section-no{
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 20px 0;
+}
+
+.section .section-division .section-info .section-img .img-responsive{
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+	margin: 10px 20%;
+}
+
+.section .section-division .section-info .section-desc p{
+	text-align: center;
+	color: #fff;
+	font-size: 0.9em;
+}
+
+/*Partners Section Styling*/
+#partners .container{
+	margin: 50px 0;
+}
+
+#partners .container .section{
+	margin: 0 3%;
+}
+
+#partners .container .section p{
+	text-align: center;	
+	font-size: 1.7em;
+	padding-bottom: 50px;
+	font-weight: bold;
+}
+
+#partners .container .section .section-page{
+	display: inline-block;
+	width: 250px;
+	border: 0.5px solid #f2f2f2;
+	border-radius: 10px;
+	margin-left: 8%;
+	box-shadow: 4px 5px 13px #737373;
+	margin-bottom: 20px;
+}
+
+#partners .container .section .section-page .section-logo img{
+	height: 50px;
+	width: 100px;
+	margin: 20px 30%;
+}
+
+#partners .container .section .section-page .section-img img{
+	height: 100px;
+	width: 200px;
+	margin: 20px 10%;;
+}
+
+#partners .container .section .section-page .section-info p{
+	padding: 10px 0;
+	border: 0.5px solid #8c8c8c;
+	border-radius: 10px;
+	font-size: 1.1em;
+}
+
+/*Reviews Section Styling*/
+#reviews .container{
+	margin-top: 50px;
+	background-color: #f2f2f2;
+}
+
+#reviews .container h2{
+	padding: 50px 0;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+#reviews .container .section{
+	margin: 20px 10%;
+	width: 80%;
+	background-color: #fff;
+	box-shadow: 4px 5px 13px #737373;
+}
+
+#reviews .container .section .section-img{
+	display: inline-block;
+	width: 120px;
+	margin: 10px;
+}
+
+#reviews .container .section .section-info{
+	display: inline-block;
+	width: 70%;
+}
+
+#reviews .container .section .section-info h3{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-bottom: 10px;
+}
+
+#reviews .container .section .section-info p{
+	font-size: 0.9em;
+	padding-right: 10px;
+}
+
+#reviews .container .section .section-img img{
+	width: 120px;
+	height: 120px;
+}
+
+#reviews .container h4{
+	text-align: right;
+	padding: 50px 20px;
+}
+
+#reviews .container a{
+	text-decoration: none;
+	color:  #4d4d4d;
+	font-size: 2.5em;
+}
+
+/*Responsive Webpage for Mobile*/
+@media only screen and (max-width: 900px){
+	#introduction .container .section1{
+		width: 100%;
+		display:block;
+		top: 0px;
+		margin-bottom: 40px;
+	}
+	
+	#introduction .container .section2{
+		width: 100%;
+		display:block;
+	}
+	
+	#introduction .container .section2 img{
+		width: 300px;
+		margin: 0 10%;
+	}
+	
+	.section .section-division .section-info{
+		display: block;
+	}
+	
+	#partners .container .section .section-page{
+		display:block;
+	}
+	
+	#reviews .container .section .section-img{
+		display: block;
+		padding-top: 10px;
+	}
+	
+	#reviews .container .section .section-info{
+		display: block;
+		width: 100%;
+		padding-left: 20px;
+		padding-bottom: 10px;
+	}
+}
+
+/*Responsive Webpage for Mobile*/
+@media only screen and (max-width: 1250px){
+	.section .section-division{
+		margin: 5px 0;
+	}
+	
+	.section .section-division .section-info{
+		width: 250px;
+		margin-left: 10px;
+	}
+	
+	#partners .container .section .section-page{
+		margin-left: 20px;
+	}
+}
